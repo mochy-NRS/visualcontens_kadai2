@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課題2</title>
+  <link rel="stylesheet" href="kadai.css">
+  <!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <!-- ナビゲーションメニュー -->
+    <div class="cp_navi">
+      <ul>
+        <li><a href="kadai.html">Home</a></li>
+        <li><a href="#detail">お店の詳細</a></li>
+        <li>
+          <a href="#menu">メニュー <span class="#caret"></span></a>
+          <div>
+            <ul>
+              <li><a href="#gyuu">牛肉</a></li>
+              <li><a href="#buta">豚肉</a></li>
+              <li><a href="#tori">鶏肉</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#content">当店について</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- メイン -->
+  <main>
+    <div id="detail" class="container">
+      <!-- お店の詳細 -->
+      <div class="about">
+        <a href="kadai.html"></a>
+        <div class="detali_text">
+          <h2>店名 牛工大</h2>
+          <div class="detail_text_1">
+            <address>場所: 〒000-0000 焼肉市美食町1-2-3</address>
+            <tel>電話番号: 000-456-7890</tel>
+            <p><mail>メール: info@yakiniki.umai.up</mail></p>
+          </div>
+          </div>
+        </div>
+
+      <h1 class="motto">モットー<br><span>中途半端なものは提供しません。一流の肉を格安で!</span></h1>
+    </div>
+    <!-- 紹介動画 -->
+    <div class="video">
+      <video controls width="500">
+        <source src="./素材/onikuimages-1129131_h.mp4" type="video/mp4">
+      </video>
+    </div>
+  </main>
+
+  <section id="menu">
+    <h1 class="content">メニュー</h1>
+    <!-- 牛肉のメニュー -->
+    <h2 id="gyuu">☆牛肉</h2>
+    <div class="niku row">
+      <div class="niku_gyuu col-4">
+        <h3>・工大カルビ</h3>
+        <img src="./素材/koudai_karubi.jpg" class="img-fluid">
+        <p>骨と骨の間の旨味の詰まった部位を丁寧にカット</p>
+      </div>
+        <div class="niku_gyuu col-4">
+        <h3>・カルビ</h3>
+        <img src="./素材/karubi.jpg" class="img-fluid">
+        <p>牛肉のうまみ、甘味と香りが楽しめます。最も人気のある定番メニューのひとつ。</p>
+      </div>
+      <div class="niku_gyuu col-4">
+        <h3>・ハラミ</h3>
+        <img src="./素材/harami.jpg" class="img-fluid">
+        <p>国民のアイドル！お店一押し</p>
+      </div>
+    </div>
+    <!-- 豚肉のメニュー -->
+    <h2 id="buta">☆豚肉</h2>
+    <div class="niku row">
+      <div class="niku_buta col-6">
+        <h3>・トンたん塩</h3>
+        <img src="./素材/buta_tan.jpg" class="img-fluid">
+        <p>コリコリ食感を楽しむ。牛タンでなくても満足できます。</p>
+      </div>
+      <div class="niku_buta col-6">
+        <h3>・やみつき豚ホルモン</h3>
+        <img src="./素材/buta_horumon.jpg" class="img-fluid">
+        <p>この食感クセになる</p>
+      </div>
+    </div>
+    <!-- 鶏肉のメニュー -->
+    <h2 id="tori">☆鶏肉</h2>
+    <div class="niku row">
+      <div class="niku_tori col-6">
+        <h3>・ハラミ付きヤゲン</h3>
+        <img src="./素材/tori_yagen.jpg" class="img-fluid">
+        <p>ジューシーなハラミがついた、コリコリの軟骨</p>
+      </div>
+      <div class="niku_tori col-6">
+        <h3>・とりもも</h3>
+        <img src="./素材/tori_momo.jpg" class="img-fluid">
+        <p>お子様にも人気。やわらかくてジューシー</p>
+      </div>
+    </div>
+  </section>
+  <!-- フッター -->
+    <footer>
+      <!-- お店について紹介 -->
+      <h1 id="content" class="content">当店について</h1>
+      <div class="mise">
+        <p>当店は、しちりんを使った本格炭火焼肉店です。</p>
+        <img src="./素材/sumi.jpg">
+      </div>
+      <div class="mise">
+        <p>炭火焼肉でも煙などの排気には最新鋭の換気システムを導入しています。</p>
+          <img src="./素材/mise1.jpg">
+      </div>
+      <div class="mise">
+
+        <p>オーダーは、タッチパネルから行ってください。<br>
+        会計は、キャッシュレス歓迎、キャッシュレスの場合は１０％オフ</p>
+        <img src="./素材/yakiniku_party.png">
+      </div>
+    </footer>
+</body>
+</html>
